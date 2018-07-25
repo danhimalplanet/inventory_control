@@ -17,4 +17,6 @@ cd ${HOME}/Projects/inventory_control
 workon inventory_control
 
 heroku auth:login
+heroku create
 
+git push heroku master
