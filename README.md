@@ -1,6 +1,16 @@
-# SETUP
+# install brew
 
-mkdir -p ${HOME}/Projects/inventory_control
+##
+
+# install python3
+
+brew install python3
+
+##
+
+# add to .bashrc
+
+export PATH="${HOME}/brew/bin:${HOME}/brew/sbin:/usr/local/bin:${PATH}:${HOME}/bin" # make sure brew bin dir is first in path
 
 export WORKON_HOME=$HOME/.virtualenvs                 # put
 
@@ -8,17 +18,29 @@ export PIP_VIRTUALENV_BASE=$WORKON_HOME               # in
 
 export PIP_RESPECT_VIRTUALENV=true                    # your
 
-export VIRTUALENV_PYTHON=${HOME}/brew/bin/python3     # 
+export VIRTUALENV_PYTHON=${HOME}/brew/bin/python3     #
 
 . ${HOME}/brew/bin/virtualenvwrapper.sh               # .bashrc
 
-cd ${HOME}/Projects/inventory_control  
-
-mkvirtualenv inventory_tracker
-
 ##
 
-cd ${HOME}/Projects/inventory_control
+# install virtualenvwrapper
+
+pip install virtualenv virtualenvwrapper
+
+## 
+
+mkdir -p ${HOME}/Projects/
+
+cd ${HOME}/Projects
+
+git clone https://github.com/danhimalplanet/inventory_control
+
+cd ${HOME}/Projects/inventory_control  
+
+mkvirtualenv inventory_control
+
+pip install -r requirements.txt
 
 workon inventory_control
 
