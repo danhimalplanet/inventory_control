@@ -30,6 +30,8 @@ pip install virtualenv virtualenvwrapper
 
 ## 
 
+# prepare project
+
 mkdir -p ${HOME}/Projects/
 
 cd ${HOME}/Projects
