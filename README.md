@@ -12,15 +12,15 @@ brew install python3
 
 export PATH="${HOME}/brew/bin:${HOME}/brew/sbin:/usr/local/bin:${PATH}:${HOME}/bin" # make sure brew bin dir is first in path
 
-export WORKON_HOME=$HOME/.virtualenvs                 # put
+export WORKON_HOME=$HOME/.virtualenvs                 
 
-export PIP_VIRTUALENV_BASE=$WORKON_HOME               # in
+export PIP_VIRTUALENV_BASE=$WORKON_HOME               
 
-export PIP_RESPECT_VIRTUALENV=true                    # your
+export PIP_RESPECT_VIRTUALENV=true                    
 
-export VIRTUALENV_PYTHON=${HOME}/brew/bin/python3     #
+export VIRTUALENV_PYTHON=${HOME}/brew/bin/python3     
 
-. ${HOME}/brew/bin/virtualenvwrapper.sh               # .bashrc
+. ${HOME}/brew/bin/virtualenvwrapper.sh               
 
 ##
 
