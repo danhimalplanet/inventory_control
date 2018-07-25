@@ -1,3 +1,5 @@
+import numpy
+
 import os
 
 from flask import Flask, jsonify, abort, make_response, request
