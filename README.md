@@ -48,6 +48,6 @@ workon inventory_control
 
 heroku auth:login
 
-heroku create
+heroku create --buildpack git://github.com/heroku/heroku-buildpack-python.git
 
 git push heroku master
